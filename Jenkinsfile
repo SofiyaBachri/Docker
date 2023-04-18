@@ -10,4 +10,7 @@ pipeline {
             }
         }
     }
+    post {
+        slakend chanel 'system', color: #00ff00', message: 'Testing jenkins with slack', tokenCredentialId: 'slackId'
+    }
 }
